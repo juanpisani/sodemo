@@ -9,7 +9,7 @@ from rest_framework.response import Response
 @api_view(['GET'])
 def test(request):
     result = ''
-    for i in range(1000):
+    for i in range(10000):
         result += str(i) + '-'
     return Response(result, 200)
 
